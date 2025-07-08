@@ -9,6 +9,8 @@ effortlessly lint and build your project right from Neovim. All output is
 automatically parsed and sent to Neovim diagnostics or quickfix list,
 streamlining your workflow for rapid development and feedback.
 
+![demo](https://github.com/user-attachments/assets/b3c7e45f-b254-4161-95e1-1aa8348e2665)
+
 ## ✨ Features
 
 - Plug-and-play overseer templates for widely-used linters and compilers.
