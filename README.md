@@ -24,7 +24,7 @@ streamlining your workflow for rapid development and feedback.
 
 ## ⚡ Installation
 
-With `lazy.nvim`, just add this plugin to the dependencies of `overseer.nvim`:
+With `lazy.nvim`, just add this plugin to the `overseer.nvim` dependencies:
 
 ```lua
 { 
