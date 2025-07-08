@@ -1,31 +1,49 @@
-# Overseer Extra
+# 🔌 Overseer Extra
 
-A Neovim plugin that provides extra [Overseer.nvim](https://github.com/stevearc/overseer.nvim) templates for popular linters and build tools, enabling smooth integration of diagnostics and compilation tasks into your workflow. This plugin expands beyond the built-in Overseer templates, offering drop-in support for common language tooling.
+A collection of [overseer.nvim](https://github.com/stevearc/overseer.nvim)
+templates for popular linters and compilers in Neovim.
 
-## Features
+This plugin expands [overseer.nvim](https://github.com/stevearc/overseer.nvim)
+with a set of extra templates for popular linters and compilers, letting you
+effortlessly lint and build your project right from Neovim. All output is
+automatically parsed and sent to Neovim diagnostics or quickfix list,
+streamlining your workflow for rapid development and feedback.
 
-- Extra overseer templates for popular linters and compilers
-- Automatic project detection (Python, C/C++, LaTeX)
-- Seamless integration with Overseer task management UI
+## ✨ Features
 
-## Installation
+- Plug-and-play overseer templates for widely-used linters and compilers.
+- Automatic integration with Neovim diagnostics for linters.
+- Automatic integration with Neovim quickfix for compilers.
+- Zero configuration required.
 
-Use your favorite Neovim plugin manager. For example, with [lazy.nvim](https://github.com/folke/lazy.nvim):
+## ⚡ Installation
+
+With `lazy.nvim`, just add this plugin to the dependencies of `overseer.nvim`:
 
 ```lua
-{
-  "your/repo/overseer-lint.nvim",
-  dependencies = { "stevearc/overseer.nvim" },
-  config = function()
-    -- Any optional setup if needed
-  end,
-}
+{ 
+    "stevearc/overseer.nvim", 
+    dependencies = {
+        "franco-ruggeri/overseer-extra.nvim" 
+    }, 
+    opts = {}, 
+} 
 ```
 
-> **Note**: This plugin depends on [Overseer.nvim](https://github.com/stevearc/overseer.nvim).
+## 🛠️ Supported Tools
 
-## Setup
+Linting templates:
 
-No setup is required for basic usage. After installation, additional Overseer templates for supported linters and build tools will be available automatically when you open a relevant project.
+- [Ruff](https://docs.astral.sh/ruff/)
+- [Pylint](https://www.pylint.org/)
+- [Mypy](https://mypy.readthedocs.io/en/stable/)
 
-See below for the list of supported tools and usage examples.
+Compilation templates:
+
+- [CMake](https://cmake.org/)
+- [Latexmk](https://ctan.org/pkg/latexmk?lang=en)
+
+## 🤝 Contributing
+
+All contributions are welcome! For new features, before opening a pull request,
+please open an issue to discuss the idea.
