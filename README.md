@@ -16,6 +16,12 @@ streamlining your workflow for rapid development and feedback.
 - Automatic integration with Neovim quickfix for compilers.
 - Zero configuration required.
 
+> **Note:** Unlike LSP servers or other plugins (e.g.,
+> [null-ls](https://github.com/nvimtools/none-ls.nvim) and
+> [nvim-lint](https://github.com/mfussenegger/nvim-lint)), this plugin lints
+> your whole project at once, giving you full workspace diagnostics on-demand
+> and a complete overview of all project issues.
+
 ## ⚡ Installation
 
 With `lazy.nvim`, just add this plugin to the dependencies of `overseer.nvim`:
