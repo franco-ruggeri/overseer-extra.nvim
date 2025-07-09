@@ -1,9 +1,11 @@
+local tool_name = "latexmk"
+
 return {
-	name = "latexmk",
+	name = tool_name,
 	builder = function()
 		return {
-			name = "latexmk",
-			cmd = "latexmk",
+			name = tool_name,
+			cmd = tool_name,
 			args = {
 				"-pdf",
 				"-interaction=nonstopmode",
@@ -18,7 +20,7 @@ return {
 	end,
 	condition = {
 		callback = function()
-			return #vim.fn.glob("*.tex", false, true) > 0 and vim.fn.executable("latexmk") == 1
+			return #vim.fn.glob("*.tex", false, true) > 0 and vim.fn.executable(tool_name) == 1
 		end,
 	},
 }

@@ -1,4 +1,4 @@
-local utils = require("utils")
+local utils = require("overseer-extra.utils")
 local tool_name = "pylint"
 
 return {

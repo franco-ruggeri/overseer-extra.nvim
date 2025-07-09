@@ -1,4 +1,4 @@
-local utils = require("utils")
+local utils = require("overseer-extra.utils")
 local tool_name = "mypy"
 
 -- Based on https://github.com/nvimtools/none-ls.nvim/blob/main/lua/null-ls/builtins/diagnostics/mypy.lua
@@ -41,6 +41,8 @@ return {
 	end,
 	condition = {
 		callback = function(opts)
+			print("Checking condition for mypy")
+			print(utils.is_python_project(opts.dir))
 			return utils.is_python_project(opts.dir) and vim.fn.executable(tool_name) == 1
 		end,
 	},
