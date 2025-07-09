@@ -26,7 +26,7 @@ streamlining your workflow for rapid development and feedback.
 
 ## ⚡ Installation
 
-With `lazy.nvim`, just add this plugin to the `overseer.nvim` dependencies:
+With `lazy.nvim`:
 
 ```lua
 { 
@@ -34,7 +34,17 @@ With `lazy.nvim`, just add this plugin to the `overseer.nvim` dependencies:
     dependencies = {
         "franco-ruggeri/overseer-extra.nvim" 
     }, 
-    opts = {}, 
+    opts = {
+        templates = {
+            "builtin",
+            "cmake",
+            "ruff",
+            "pylint",
+            "mypy",
+            "latexmk",
+        },
+        -- other configuration
+    }, 
 } 
 ```
 
