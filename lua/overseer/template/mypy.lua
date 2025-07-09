@@ -41,8 +41,6 @@ return {
 	end,
 	condition = {
 		callback = function(opts)
-			print("Checking condition for mypy")
-			print(utils.is_python_project(opts.dir))
 			return utils.is_python_project(opts.dir) and vim.fn.executable(tool_name) == 1
 		end,
 	},
