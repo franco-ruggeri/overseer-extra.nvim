@@ -45,14 +45,7 @@ With `lazy.nvim`
             "franco-ruggeri/overseer-extra.nvim" 
         }, 
         opts = {
-            templates = {
-                "builtin",
-                "cmake",
-                "ruff",
-                "pylint",
-                "mypy",
-                "latexmk",
-            },
+            templates = { "builtin", "extra" },
             -- other configuration
         }, 
     } 
