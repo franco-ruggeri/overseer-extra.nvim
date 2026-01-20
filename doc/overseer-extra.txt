@@ -1,4 +1,4 @@
-*overseer-extra.txt*         For NVIM v0.8.0         Last change: 2025 July 09
+*overseer-extra.txt*        For NVIM v0.8.0       Last change: 2026 January 20
 
 ==============================================================================
 Table of Contents                           *overseer-extra-table-of-contents*
